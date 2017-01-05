@@ -1,0 +1,14 @@
+<% include _header %>
+<h1><a href="./newpost">Make a new post</a></h1>
+<div>
+  <% blog.forEach(function(post) { %>
+    <ul>
+      <li><%= post.title %></li>
+      <li><%= post.author %></li>
+      <li><%= post.date %></li>
+      <li><%= post.body %></li>
+    </Ul>
+  <% }) %>
+</div>
+</body>
+</html>
